@@ -1,0 +1,16 @@
+<div id="container">
+  <div class="row">
+    <div class="columns small-12 content-center margin-top-2">
+      <div *ngIf="message" class="full-width text-center">{{message}}</div>
+      <div *ngIf="error && !message" class="full-width text-center color-red">{{error}}</div>
+    </div>
+    <div class="columns small-12 content-center margin-top-2">
+      <video id="video" autoplay playsinline></video>
+    </div>
+    <div class="columns small-12 content-center margin-top-2">
+      <div class="full-width text-center">{{decodedQr}}</div>
+    </div>
+    <div class="columns small-12 content-center margin-top-2">
+    </div>
+  </div>
+</div>
